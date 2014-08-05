@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Tue Aug 05 18:20:16 CEST 2014
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Android-Zusammenfassung.tex
+outputFile=Android-Zusammenfassung.pdf
+langSpell=de
+markDer=true
+srcDir=
