@@ -11,8 +11,12 @@
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Intents}{subsection.2.3}% 11
 \BOOKMARK [3][-]{subsubsection.2.3.3}{Fragments}{subsection.2.3}% 12
 \BOOKMARK [3][-]{subsubsection.2.3.4}{Services}{subsection.2.3}% 13
-\BOOKMARK [1][-]{section.3}{Allgemeiner Ablauf bei einer einfachen Beispiel-App}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{Anlegen eines Projektes und Erstellung einer MainActivity}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{Layout festlegen und Views hinzuf\374gen}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{ID und Namen eines jeden Views festlegen}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.4}{Einbinden der View-Elemente in die Activity-Klasse}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.2.3.5}{Men\374s}{subsection.2.3}% 14
+\BOOKMARK [1][-]{section.3}{Allgemeiner Ablauf bei einer einfachen Beispiel-App}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Anlegen eines Projektes und Erstellung einer MainActivity}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Layout festlegen und Views hinzuf\374gen}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{ID und Namen eines jeden Views festlegen}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Einbinden der View-Elemente in die Activity-Klasse}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.5}{Actionbar mit Image-Buttons erstellen}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.6}{Intents zum Aufruf einer Activity aus der aktuellen Activity}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.7}{Anmelden der Activities im Manifest}{section.3}% 22

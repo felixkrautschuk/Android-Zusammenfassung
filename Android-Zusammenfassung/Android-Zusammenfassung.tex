@@ -92,11 +92,12 @@ String-Resource Datei \textit{string.xml} eingetragen und über
 \textit{@string/\ldots} referenziert. Die Speicherung von Texten an einem
 zentralen Ort hat zahlreiche Vorteile. Beispielsweise werden identische
 Textteile leichter entdeckt, als wenn diese in den Quelltexten der Klassen
-verborgen sind. Damit lässt sich, wenn auch in eher bescheidenem Umfang,
-Speicherplatz sparen. Außerdem macht die Trennung von Daten und Programmlogik
-die Internationalisierung, also die Übersetzung einer App in verschiedene
-Sprachen, viel einfacher. Hierzu wird für jede zu unterstützende Sprache im
-Ordner \textit{res} ein Verzeichnis angelegt.
+verborgen sind und man erst jede Klasse oder Layout-Datei durchsuchen muss.
+Damit lässt sich, wenn auch in eher bescheidenem Umfang, Speicherplatz sparen.
+Außerdem macht die Trennung von Daten und Programmlogik die
+Internationalisierung, also die Übersetzung einer App in verschiedene Sprachen,
+viel einfacher. Hierzu wird für jede zu unterstützende Sprache im Ordner
+\textit{res} ein Verzeichnis angelegt.
 Dessen Name beginnt mit \textit{values-} und endet mit dem ISO-Sprachschlüssel.
 Für Deutsch ist dies \textit{de}. Das Verzeichnis muss also \textit{values-de}
 heißen. Jeder dieser Ordner erhält eine eigene Version von \textit{strings.xml}.
@@ -104,12 +105,23 @@ Deren Bezeichner sind stets gleich, die Texte liegen hingegen in den jeweiligen
 Sprachen vor. Texte in der Standardsprache verbleiben in \textit{values}.
 
 \subsection{main.xml}
+\includegraphics{grafiken/leereAppMenue2.jpg}
+\\\includegraphics{grafiken/leereAppMenue.jpg}
+\\Die \textit{main.xml} ist eine sogenannte Menu-Resource-Datei.
+Menu-Resource-Dateien sind im Verzeichnis '\textit{src/menu}' hinterlegt und
+dienen dazu Options-Menüs oder Kontextmenüs zu erstellen (Erläuterungen dazu im
+späteren Kapitel Menüs), die man z.B. mit der Menütaste des Smartphones
+betätigen aufrufen kann. Menü-Items sollten immer in solchen Menü-Dateien
+aufgebaut werden statt in den Activity-Dateien. Man kann die erstellten Menüs
+später in Activities oder Fragments einbinden.
 \subsection{activity\_main.xml}
-
+\includegraphics{grafiken/leereActivityLayout.jpg}
+\\\includegraphics{grafiken/leereActivityLayout2.jpg}
 
 \section{Layouts, Views und Komponenten}
 \subsection{Layouts}
 \subsection{Views und Widgets}
+%S.117 Android 4 Apps mit SDK
 \subsection{Basiskomponenten einer App}
 \subsubsection{Activity}
 Normalerweise ist jeder Activity eine Benutzeroberfläche, also ein Baum bestehend
@@ -120,25 +132,41 @@ Jede Android- Anwendung besteht deshalb aus mindestens einer Activity.
 Activities können andere Activities aufrufen und mit ihnen Daten austauschen.
 Jede Activity besteht aus einer in XML definierten Layout-Datei und einer
 dazugehörigen Java-Klassendatei, welche bei Android Studio im Verzeichnis
-'\textit{\%Appname/src/main/java/\%packagename/}' abgelegt ist. Die dazugehörige
-Layout-Datei (XML-Datei) ist im Verzeichnis
+\\'\textit{\%Appname/src/main/java/\%packagename/}' abgelegt ist. Die
+dazugehörige Layout-Datei (XML-Datei) ist im Verzeichnis
 '\textit{\%Appname/src/main/res/layout}' zu finden.
 
+%S.95 Android 4 Apps mit SDK
 %onCreate()
 %onCreateOptionsmenu
-%\ldots
+%onOptionsItemSelected(MenuItem item)
+
 
 \subsubsection{Intents}
+%S. 102 Android 4 Apps mit SDK
+%S. 82  Android Apps mit Beispiel realer App
+%Implizite und Explizite Intents
 \subsubsection{Fragments}
+%S. 109 Android 4 Apps mit SDK
 \subsubsection{Services}
+\subsubsection{Menüs}
+%Kontextmenüs, Optionsmenüs
+%http://developer.android.com/guide/topics/ui/menus.html
+%http://developer.android.com/guide/topics/resources/menu-resource.html
+%S.85 Android Apps mit Beispiel realer App
 
 \section{Allgemeiner Ablauf bei einer einfachen Beispiel-App}
 \subsection{Anlegen eines Projektes und Erstellung einer MainActivity}
+
 \subsection{Layout festlegen und Views hinzufügen}
 \subsection{ID und Namen eines jeden Views festlegen}
 %string.xml!
 \subsection{Einbinden der View-Elemente in die Activity-Klasse}
 %findViewById(R.id. ..)
+\subsection{Actionbar mit Image-Buttons erstellen}
+%S. 76 Android Apps entwickeln Beispiel realer App
+\subsection{Intents zum Aufruf einer Activity aus der aktuellen Activity}
+\subsection{Anmelden der Activities im Manifest}
 
 
 \end{document}
