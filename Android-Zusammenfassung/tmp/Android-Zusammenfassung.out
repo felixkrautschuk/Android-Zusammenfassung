@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Programmstruktur - die wichtigsten Verzeichnisse und Dateien}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{AndroidManifest.xml}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{strings.xml}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{main.xml}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{activity\137main.xml}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Layouts, Views und Komponenten}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Layouts}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Views und Widgets}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Basiskomponenten einer App}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Activity}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Intents}{subsection.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Fragments}{subsection.2.3}% 12
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Services}{subsection.2.3}% 13
+\BOOKMARK [1][-]{section.3}{Allgemeiner Ablauf bei einer einfachen Beispiel-App}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Anlegen eines Projektes und Erstellung einer MainActivity}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Layout festlegen und Views hinzuf\374gen}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{ID und Namen eines jeden Views festlegen}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{Einbinden der View-Elemente in die Activity-Klasse}{section.3}% 18

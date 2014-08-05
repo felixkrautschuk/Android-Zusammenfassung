@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  5 AUG 2014 18:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  5 AUG 2014 21:14
 entering extended mode
 **Android-Zusammenfassung.tex
 
@@ -381,7 +381,7 @@ ng.out)
 (C:\Users\Felix\eclipse_workspace\Android-Zusammenfassung\Android-Zusammenfassu
 ng.out)
 \@outlinefile=\write3
- <grafiken/HTW-Logo.png, id=3, 192.72pt x 45.46988pt>
+ <grafiken/HTW-Logo.png, id=71, 192.72pt x 45.46988pt>
 File: grafiken/HTW-Logo.png Graphic file (type png)
 
 <use grafiken/HTW-Logo.png>
@@ -394,39 +394,123 @@ lix/eclipse_workspace/Android-Zusammenfassung/grafiken/HTW-Logo.png>]
 \c@satz=\count120
 
 (C:\Users\Felix\eclipse_workspace\Android-Zusammenfassung\Android-Zusammenfassu
-ng.toc)
+ng.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \c@roemisch=\count121
  [3
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+<grafiken/ordnerstruktur.jpg, id=103, 304.13625pt x 393.72093pt>
+File: grafiken/ordnerstruktur.jpg Graphic file (type jpg)
+
+<use grafiken/ordnerstruktur.jpg>
+Package pdftex.def Info: grafiken/ordnerstruktur.jpg used on input line 63.
+(pdftex.def)             Requested size: 304.1355pt x 393.71997pt.
+
+<grafiken/leereAppAndroidManifest.jpg, id=104, 439.6425pt x 271.76532pt>
+File: grafiken/leereAppAndroidManifest.jpg Graphic file (type jpg)
+
+<use grafiken/leereAppAndroidManifest.jpg>
+Package pdftex.def Info: grafiken/leereAppAndroidManifest.jpg used on input lin
+e 72.
+(pdftex.def)             Requested size: 439.64142pt x 271.76465pt.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 74.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
+
+Overfull \hbox (4.37288pt too wide) in paragraph at lines 66--86
+\OT1/cmr/m/n/12 At-tribut an-droid:name bein-hal-tet den im As-sis-ten-ten eing
+egebe-nen Activity-Namen. Wenn
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 
+      [1
+
+ <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/ordnerstruk
+tur.jpg>]
+<grafiken/leereAppStrings.jpg, id=108, 300.3722pt x 255.95625pt>
+File: grafiken/leereAppStrings.jpg Graphic file (type jpg)
+
+<use grafiken/leereAppStrings.jpg>
+Package pdftex.def Info: grafiken/leereAppStrings.jpg used on input line 88.
+(pdftex.def)             Requested size: 300.37144pt x 255.95561pt.
+
+<grafiken/leereAppStrings1.jpg, id=109, 356.83313pt x 115.18031pt>
+File: grafiken/leereAppStrings1.jpg Graphic file (type jpg)
+
+<use grafiken/leereAppStrings1.jpg>
+Package pdftex.def Info: grafiken/leereAppStrings1.jpg used on input line 89.
+(pdftex.def)             Requested size: 356.83224pt x 115.18001pt.
+ [2 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/leereApp
+AndroidManifest.jpg>]
+Overfull \hbox (39.96835pt too wide) in paragraph at lines 115--126
+\OT1/cmr/m/n/12 Views und View-Groups, zu-ge-ord-net. Ac-tiv-i-ties bilden dem-
+nach die vom An-wen-der wahrgenomme-
+ []
+
+
+Overfull \hbox (59.51741pt too wide) in paragraph at lines 115--126
+\OT1/cmr/m/n/12 Klassendatei, welche bei An-droid Stu-dio im Verze-ich-nis '\OT
+1/cmr/m/it/12 %App-name/src/main/java/%packagename/\OT1/cmr/m/n/12 '
+ []
+
+[3 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/leereAppS
+trings.jpg> <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/
+leereAppStrings1.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
 
 (C:\Users\Felix\eclipse_workspace\Android-Zusammenfassung\Android-Zusammenfassu
 ng.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
-Package rerunfilecheck Info: File `Android-Zusammenfassung.out' has not changed
-.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+
+
+Package rerunfilecheck Warning: File `Android-Zusammenfassung.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Android-Zusammenfassung.out':
+(rerunfilecheck)             Before: 83C71B1018CA0FE8D76E87218BF9BB91;1267
+(rerunfilecheck)             After:  ED1B73AAFBEDD40A419D89CB5AD193C2;1375.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 6417 strings out of 493921
- 93246 string characters out of 3144876
- 177016 words of memory out of 3000000
- 9652 multiletter control sequences out of 15000+200000
- 5441 words of font info for 20 fonts, out of 3000000 for 9000
+ 6546 strings out of 493921
+ 95488 string characters out of 3144876
+ 180016 words of memory out of 3000000
+ 9732 multiletter control sequences out of 15000+200000
+ 10749 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,4n,26p,267b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,4n,28p,267b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Android-Zusammenfassung.pdf (2 pages, 85278 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Android-Zusammenfassung.pdf (6 pages, 263202 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

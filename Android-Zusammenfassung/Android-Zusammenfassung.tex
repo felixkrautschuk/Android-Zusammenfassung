@@ -42,7 +42,7 @@
 
 \thispagestyle{empty}\clearpage
 
-%-----------------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------------
 %\rmfamily \pagestyle{fancy} \setcounter{secnumdepth}{4}
 \newtheorem{satz}{Satz}
 \newtheorem{lemma}[satz]{Lemma}
@@ -57,5 +57,88 @@
 \clearpage
 
 \setcounter{page}{2} \pagenumbering{arabic}
+%-----------------------------------------------------------------------------------------------------------------
+
+\section{Programmstruktur - die wichtigsten Verzeichnisse und Dateien}
+\includegraphics{grafiken/ordnerstruktur.jpg}
+
+\subsection{AndroidManifest.xml}
+Zu jeder App gehört eine zentrale Beschreibungsdatei. Sie enthält eine Liste der
+Komponenten, aus denen das Programm besteht und befindet sich in der obersten
+Ebene des Projektverzeichnisses. Außerdem werden in ihr die benötigten
+Berechtigungen sowie etwaige zusätzlich verwendete Bibliotheken vermerkt. Auch
+Angaben zur mindestens nötigen oder gewünschten Android-Version werden hier
+eingetragen.
+\\\includegraphics{grafiken/leereAppAndroidManifest}
+\\Die Komponenten einer Anwendung sind Kinder des Elements
+\textit{\textless application/\textgreater}. Wenn man im Assistenten zum Anlegen
+neuer Projekte Create Activity mit einem Häkchen versieht und einen Namen
+einträgt, enthält das Manifest ein Element \textit{\textless activity
+/\textgreater}. Dessen Attribut android:name beinhaltet den im Assistenten
+eingegebenen Activity-Namen. Wenn man manuell eine Activity-Klasse anlegt (eine
+Klasse anlegt und mit \textit{extends Activity} versieht), muss man nachträglich
+die erzeugte Activity im Manifest bekannt machen. Mithilfe des Elementes
+\textit{\textless intent-filter /\textgreater} kann man eine Activity zur
+Haupt-Activity machen. Dessen Kindelement \textit{\textless action
+/\textgreater} kennzeichnet die Activity als Haupteinstiegspunkt in die
+Anwendung. \textit{\textless category /\textgreater} sorgt dafür, dass sie im
+Programmstarter angezeigt wird.
+
+\subsection{strings.xml}
+\includegraphics{grafiken/leereAppStrings.jpg}
+\\\includegraphics{grafiken/leereAppStrings1.jpg}
+\\Elemente haben einen Titel. Üblicherweise werden sämtliche Titel in die
+String-Resource Datei \textit{string.xml} eingetragen und über
+\textit{@string/\ldots} referenziert. Die Speicherung von Texten an einem
+zentralen Ort hat zahlreiche Vorteile. Beispielsweise werden identische
+Textteile leichter entdeckt, als wenn diese in den Quelltexten der Klassen
+verborgen sind. Damit lässt sich, wenn auch in eher bescheidenem Umfang,
+Speicherplatz sparen. Außerdem macht die Trennung von Daten und Programmlogik
+die Internationalisierung, also die Übersetzung einer App in verschiedene
+Sprachen, viel einfacher. Hierzu wird für jede zu unterstützende Sprache im
+Ordner \textit{res} ein Verzeichnis angelegt.
+Dessen Name beginnt mit \textit{values-} und endet mit dem ISO-Sprachschlüssel.
+Für Deutsch ist dies \textit{de}. Das Verzeichnis muss also \textit{values-de}
+heißen. Jeder dieser Ordner erhält eine eigene Version von \textit{strings.xml}.
+Deren Bezeichner sind stets gleich, die Texte liegen hingegen in den jeweiligen
+Sprachen vor. Texte in der Standardsprache verbleiben in \textit{values}.
+
+\subsection{main.xml}
+\subsection{activity\_main.xml}
+
+
+\section{Layouts, Views und Komponenten}
+\subsection{Layouts}
+\subsection{Views und Widgets}
+\subsection{Basiskomponenten einer App}
+\subsubsection{Activity}
+Normalerweise ist jeder Activity eine Benutzeroberfläche, also ein Baum bestehend
+aus Views und ViewGroups, zugeordnet. Activities bilden demnach die vom Anwender
+wahrgenommenen Bausteine einer App.
+Sie repräsentieren also meist die Benutzeroberfläche und Interaktionen. 
+Jede Android- Anwendung besteht deshalb aus mindestens einer Activity.
+Activities können andere Activities aufrufen und mit ihnen Daten austauschen.
+Jede Activity besteht aus einer in XML definierten Layout-Datei und einer
+dazugehörigen Java-Klassendatei, welche bei Android Studio im Verzeichnis
+'\textit{\%Appname/src/main/java/\%packagename/}' abgelegt ist. Die dazugehörige
+Layout-Datei (XML-Datei) ist im Verzeichnis
+'\textit{\%Appname/src/main/res/layout}' zu finden.
+
+%onCreate()
+%onCreateOptionsmenu
+%\ldots
+
+\subsubsection{Intents}
+\subsubsection{Fragments}
+\subsubsection{Services}
+
+\section{Allgemeiner Ablauf bei einer einfachen Beispiel-App}
+\subsection{Anlegen eines Projektes und Erstellung einer MainActivity}
+\subsection{Layout festlegen und Views hinzufügen}
+\subsection{ID und Namen eines jeden Views festlegen}
+%string.xml!
+\subsection{Einbinden der View-Elemente in die Activity-Klasse}
+%findViewById(R.id. ..)
+
 
 \end{document}
