@@ -11,13 +11,13 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Events}{9}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}Intents}{10}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Fragments}{11}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}Services}{11}{subsubsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.6}Men\"us}{11}{subsubsection.2.3.6}
-\contentsline {section}{\numberline {3}Allgemeiner Ablauf bei einer einfachen Beispiel-App}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Anlegen eines Projektes und Erstellung einer MainActivity}{11}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Layout festlegen und Views hinzuf\"ugen}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}ID und Namen eines jeden Views festlegen}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Einbinden der View-Elemente in die Activity-Klasse}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Actionbar mit Image-Buttons erstellen}{11}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Intents zum Aufruf einer Activity aus der aktuellen Activity}{11}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Anmelden der Activities im Manifest}{11}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {2.3.5}Services}{12}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Men\"us}{14}{subsubsection.2.3.6}
+\contentsline {section}{\numberline {3}Allgemeiner Ablauf bei einer einfachen Beispiel-App}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Anlegen eines Projektes und Erstellung einer MainActivity}{14}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Layout festlegen und Views hinzuf\"ugen}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}ID und Namen eines jeden Views festlegen}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Einbinden der View-Elemente in die Activity-Klasse}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Actionbar mit Image-Buttons erstellen}{14}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Intents zum Aufruf einer Activity aus der aktuellen Activity}{14}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Anmelden der Activities im Manifest}{14}{subsection.3.7}

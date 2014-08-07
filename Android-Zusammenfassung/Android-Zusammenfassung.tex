@@ -313,7 +313,7 @@ Aktion ausgeführt werden soll. Es gibt
     \item Beispiel\\
     		\includegraphics{grafiken/beispielExpliziteIntents.jpg}
     		\begin{itemize}
-    		  \item mit dem Intent werden Informationen (.putExtra(…)) an die
+    		  \item mit dem Intent werden Informationen (.putExtra(\ldots)) an die
     		TestActivity übergeben (können verschiedenste Informationen sein)
     		\item Information werden als Key-Value-Paar übergeben
     		\item in der TestActivity ist es dann möglich, die übergebenen Informationen
@@ -341,17 +341,65 @@ Mit einem expliziten Intent lässt sich aus einer Activity eine neue
 Activity starten:\\
 \includegraphics{grafiken/beispielActivityIntents.jpg}
 
-%S. 102 Android 4 Apps mit SDK
-%S. 82  Android Apps mit Beispiel realer App
-%Implizite und Explizite Intents
+
+
 \subsubsection{Fragments}
-%S. 109 Android 4 Apps mit SDK
+Fragments kann man als Teile einer Activity verstehen. Fragments bestehen,
+wie auch Activities, aus einer Java-Datei und einem Layout und haben einen
+Lebenszyklus (Lifecycle), der der Activity ähnlich ist. Jedoch benötigen
+Fragments immer eine Activity, die sie umgibt und in deren Lifecycle sich
+Fragments integrieren. Der Nutzen von Fragments liegt darin, dass Teile eines
+Layouts mit Code in kleinere und wiederverwendbare Einheiten ausgliedert und
+somit schneller und effizienter Anwendungen für verschiedene Gerätetypen oder
+Displaymodi erstellt werden können. Mann kann diese Fragmente also in Layouts
+für verschiedene Auflösungen und Orientierungen des Bildschirms einbinden und
+wiederverwenden.\\
+Fragmente leiten entweder direkt von der Basisklasse
+\textit{android.app.Fragment} ab oder von einem ihrer spezialisierten Kinder,
+beispielsweise \textit{ListFragment } oder \textit{DialogFragment}.
+Beispiel:\\
+\includegraphics{grafiken/fragmentBeispiel}
+\\\textit{TestFragment} überschreibt zwei Methoden. \textit{onCreateView()} wird
+aufgerufen, wenn ein Fragment den Komponentenbaum seiner Benutzeroberfläche
+instanziieren soll.\\
+Fragment in Activity in Activity einbetten:\\
+\includegraphics{grafiken/fragmentInActivityEinbetten.jpg}
+\\In diesem Ausschnitt wird das Fragment in die Layout-Datei einer Activity
+eingebettet. Das Attribut android:name legt fest, welche Klasse das hier
+definierte Fragment implementiert (nämlich die aus obigem Beispielcode).\\
+Im Gegensatz zu Activities, Services oder Broadcast Receivern trägt man
+Fragmente nicht in die Manifestdatei ein. Man verbindet sie mit einer Activity,
+indem man sie in deren Benutzeroberfläche integriert. Dies geschieht
+normalerweise deklarativ in Layoutdateien.
+
+
 \subsubsection{Services}
+Services haben kein User-Interface und dienen zur Abarbeitung von Aufgaben im
+Hintergrund. Sie sind gerade für länger andauernde Tätigkeiten gedacht. Es gibt
+2 Formen von Services:
+\begin{itemize}
+  \item Started:
+  \begin{itemize}
+  	\item wird von einer anderen Anwendungskomponente gestartet, läuft
+  	eigenständig und beendet sich selbst nach Abarbeitung seiner Aufgabe
+  \end{itemize}
+  \item Bound:
+  \begin{itemize}
+    \item wird an eine oder mehrere Anwendungskomponenten mit bindService()
+    gebunden und bietet eine Client-Service-Schnittstelle zur Kommunikation
+    \item wird beendet, sobald keine Komponente mehr an ihn gebunden ist
+  \end{itemize}
+\end{itemize}
+\includegraphics{grafiken/services.jpg}
+
+
+
 \subsubsection{Menüs}
 %Kontextmenüs, Optionsmenüs
 %http://developer.android.com/guide/topics/ui/menus.html
 %http://developer.android.com/guide/topics/resources/menu-resource.html
 %S.85 Android Apps mit Beispiel realer App
+%drawables, icons für actionbars
 
 \section{Allgemeiner Ablauf bei einer einfachen Beispiel-App}
 \subsection{Anlegen eines Projektes und Erstellung einer MainActivity}
