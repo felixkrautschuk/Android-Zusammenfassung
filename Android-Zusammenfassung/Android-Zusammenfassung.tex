@@ -104,6 +104,7 @@ heißen. Jeder dieser Ordner erhält eine eigene Version von \textit{strings.xml}.
 Deren Bezeichner sind stets gleich, die Texte liegen hingegen in den jeweiligen
 Sprachen vor. Texte in der Standardsprache verbleiben in \textit{values}.
 
+
 \subsection{main.xml}
 \includegraphics{grafiken/leereAppMenue2.jpg}
 \\\includegraphics{grafiken/leereAppMenue.jpg}
@@ -113,20 +114,119 @@ dienen dazu Options-Menüs oder Kontextmenüs zu erstellen (Erläuterungen dazu im
 späteren Kapitel Menüs), die man z.B. mit der Menütaste des Smartphones
 betätigen aufrufen kann. Menü-Items sollten immer in solchen Menü-Dateien
 aufgebaut werden statt in den Activity-Dateien. Man kann die erstellten Menüs
-später in Activities oder Fragments einbinden.
+später in Activities oder Fragments einbinden.\\
+Das Element \textit{\textless menu /\textgreater} dient dazu ein \textit{Menu}
+anzulegen, welches einen Container für alle anderen Menü-Elemente. Es muss das
+Wurzelelement der XML-Datei sein und es kann mehrere Elemente des Typs
+\textit{item} oder \textit{group} enthalten.\\
+Durch \textit{\textless item /\textgreater} wird ein Menü-Element angelegt,
+welches widerum ein geschachteltes \textit{\textless menu /\textgreater}
+enthalten kann, um quasi ein Submenü erstellen zu können.
+\textit{item}-Elemente können widerum Attribute besitzen um deren
+Erscheinungsbild und das Verhalten zu definieren, z.B. eine \textit{id}, ein
+\textit{icon}, ein \textit{titel} (Resource-String in der string.xml
+definieren!) oder \textit{showAsAction}, welches angibt wie ein Menü-Element in
+der ActionBar erscheint und z.B. die Werte \textit{never}, \textit{always}
+annehmen kann.\\
+\textit{\textless group /\textgreater} ist ein optionaler,
+nicht sichtbarer Container um Menü-Bestandteile zu kategorisieren, sodass diese
+dann bestimmte Eigenschaften miteinander teilen können.
+
+
 \subsection{activity\_main.xml}
 \includegraphics{grafiken/leereActivityLayout.jpg}
 \\\includegraphics{grafiken/leereActivityLayout2.jpg}
+Die \textit{activity\_main.xml} ist die Layout-Datei der Main-Activity, also der
+Startseite des Programmes. Hier können nun entweder über XML selbst (wie im
+Bild) oder über den Designer View-Elemente hinzugefügt werden. Bei letzterer
+Herangehensweise wird das XML-Dokument automatisch generiert, man kann sich also
+die Oberfläche "zusammenklicken".\\
+Das User-Interface besteht aus einem Wurzelelement, welches eine Art
+Container für alle anderen View-Elemente darstellt.
+Das Wurzelelement kann z.B. eine ViewGroup sein (LinearLayout,
+ListView,\ldots). Auf jeden Fall muss die XML Datei den XML-Namespace
+(\textit{xmlns =} \ldots) enthalten. Er Teil des öffnenden Tags des
+Wurzelelementes. Desweiteren werden die Attribute \textit{layout\_width} und
+\textit{layout\_heigth} benötigt.
+Also sieht die kleinstmögliche Layout-Datei für die MainActivity folgendermaßen
+aus:\\
+\\\includegraphics{grafiken/leereActivityLayoutMindest.jpg}
+\\Meistens bekommen die Attribute \textit{layout\_width} und
+\textit{layout\_heigth} für das Wurzelelement beide den Wert
+\textit{fill\_parent} damit das Layout den gesamten Bildschirm des Gerätes
+einnimmt.
+
+
 
 \section{Layouts, Views und Komponenten}
 \subsection{Layouts}
-\subsection{Views und Widgets}
-%S.117 Android 4 Apps mit SDK
+Jede Android-App besteht aus mindestens einer oder mehreren Activities und
+Layouts. Ein Layout ist ein Rahmen mit speziellen Eigenschaften zur Ausrichtung
+und Anordnung von View- Elementen auf der Oberfläche. Es gibt in Android keine
+Klasse Layout, jeder einzelne Layout-Typ ist eine eigene Klasse, die die Klasse
+ViewGroup erweitert. Layouts können allerdings nicht nur View-Elemente
+aufnehmen, sondern auch wieder Layouts. Damit ist eine Verschachtelung der
+Oberflächenelemente möglich.\\
+Folgende Layout-Tags sind möglich:
+\begin{itemize}
+  \item \textit{LinearLayout}: 
+  \begin{itemize}
+    \item alle View-Elemente, je nach Orientierung, Element für Element
+    untereinander oder nebeneinander aneinandergereiht dargestellt
+  \end{itemize}
+  \item \textit{TableLayout}: 
+  \begin{itemize}
+    \item Möglichkeit, gleichförmig zusammenhängende
+Oberflächen spalten- und zeilenbasiert zu erstellen (z.B. Eingabeformulare,\ldots)
+  \end{itemize}
+  \item \textit{GridLayout}:
+  \begin{itemize}
+    \item ähnlich dem TableLayout, kann jedoch so einfach wie das LinearLayout
+    angewendet werden
+    \item orientiert sich wie das TableLayout bei der Ausrichtung an Zeilen und
+    Spalten
+    \item Grafikelemente, die eine unterschiedliche Größe besitzen können sehr
+    effizient positioniert werden
+    \item Größe jeder einzelnen Zelle wird dynamisch angepasst
+  \end{itemize}
+  \item \textit{RelativeLayout}
+  \begin{itemize}
+    \item alle View-Elemente werden relativ zueinander positioniert
+    \item Ausrichtung eines View-Elements erfolgt am äußeren Rahmen, der
+    vertikalen bzw. der horizontalen Mitte oder dem vorhergehenden View-Element
+  \end{itemize}
+  \item \textit{FrameLayout}:
+  \begin{itemize}
+    \item einfachstes und performantestes Layout
+    \item alle Layout-Elemente werden in der linken oberen Ecke ausgerichtet und
+    übereinander gestapelt
+  \end{itemize}
+\end{itemize}
+
+
+
+\subsection{Views}
+Die Basisklasse aller Bedienelemente ist android.view.View. Die Benutzeroberfläche
+einer App besteht also aus einer oder mehreren Views oder von ihr abgeleiteten
+Klassen. Sie kümmern sich um die Bearbeitung von Tastatur-, Touch- und
+Trackball-Ereignissen. Zum Ermitteln von Referenzen auf spezifische Komponenten
+dient die Methode \textit{findViewById()}.
+
+
+
 \subsection{Basiskomponenten einer App}
+Jede Android-Anwendung besteht aus einem oder mehreren Bausteinen
+(Basiskomponenten). Jede Basiskomponente kann mehrfach in einer
+Android-Anwendung vorkommen. Alle Basiskomponenten haben einen Lebenszyklus
+(Lifecycle). Diesen Lifecycle gilt es bei der Programmierung zu beachten.
+Abhängig vom Lifecycle der Komponente entscheidet sich, ob Daten oder Funktionen
+zur Laufzeit zur Verfügung stehen, oder ob diese verloren gehen.
+
 \subsubsection{Activity}
-Normalerweise ist jeder Activity eine Benutzeroberfläche, also ein Baum bestehend
-aus Views und ViewGroups, zugeordnet. Activities bilden demnach die vom Anwender
-wahrgenommenen Bausteine einer App.
+Activities leiten von android.app.Activity oder deren Kindern ab.
+Normalerweise ist jeder Activity eine Benutzeroberfläche, also ein Baum
+bestehend aus Views und ViewGroups, zugeordnet. Activities bilden demnach die
+vom Anwender wahrgenommenen Bausteine einer App.
 Sie repräsentieren also meist die Benutzeroberfläche und Interaktionen. 
 Jede Android- Anwendung besteht deshalb aus mindestens einer Activity.
 Activities können andere Activities aufrufen und mit ihnen Daten austauschen.
@@ -134,15 +234,113 @@ Jede Activity besteht aus einer in XML definierten Layout-Datei und einer
 dazugehörigen Java-Klassendatei, welche bei Android Studio im Verzeichnis
 \\'\textit{\%Appname/src/main/java/\%packagename/}' abgelegt ist. Die
 dazugehörige Layout-Datei (XML-Datei) ist im Verzeichnis
-'\textit{\%Appname/src/main/res/layout}' zu finden.
+'\textit{\%Appname/src/main/res/layout}' zu finden.\\
+Wichtige Methoden:
+\begin{itemize}
+  \item protected void onCreate(Bundle savedInstanceState)
+  \begin{itemize}
+    \item wird von praktisch jeder selbst geschriebenen Activity überschrieben
+    \item Android ruft sie während der Initialisierungsphase einer Aktivität auf
+    \item Aufgaben:
+    \begin{itemize}
+      \item Aufrufen der gleichnamigen Elternmethode: \textit{super.onCreate()},
+      sonst gibt es zur Laufzeit eine SuperNotCalledException
+      \item Initialisieren von Instanzvariablen mittels \textit{findViewById()}
+      , z.B.\\buttonAdd = (Button) findViewById(R.id.buttonAdd);
+      \item Setzen der Benutzeroberfläche durch\\
+      \textit{setContentView(setContentView(R.layout. \textless
+      Layout-Datei \textgreater )} \\wobei die Endung \textit{xml} weggelassen
+      wird
+      \item Wiederherstellen eines gespeicherten Zustands um Wiederanlaufzeiten
+      einer Activity zu optimieren. Android stoppt Activities unter bestimmten
+      Umständen automatisch, z.B. beim drehen des Gerätes, so wird vorher der
+      Zustand in einem Zwischenspeicher \textit{savedInstanceState} gesichert.
+    \end{itemize}
+  \end{itemize}
+  \item onCreateOptionsMenu(Menu menu)
+  \begin{itemize}
+    \item Ereignisbehandlung der Menüeinträge in der ActionBar erfolgt durch
+    \textit{actions}
+    \item diese Methode ist für die Erstellung des Menüs zuständig, es wird das
+    Menü aufgeklappt und es werden Items hinzugefügt
+  \end{itemize}
+  \item onOptionsItemSelected(MenuItem item)
+  \begin{itemize}
+    \item wird immer dann ausgeführt, wenn ein Menü-Item betätigt wurde
+    \item hier erfolgt die Ermittlung, welcher Menüeintrag betätigt wurde, z.B.
+    mit \\switch(item.getItemId()) \{ case R.id.main\_menu\_about: \ldots \}
+  \end{itemize}
+\end{itemize}
 
-%S.95 Android 4 Apps mit SDK
-%onCreate()
-%onCreateOptionsmenu
-%onOptionsItemSelected(MenuItem item)
 
+\subsubsection{Events}
+\begin{itemize}
+  \item Klick-Ereignisse
+  \begin{itemize}
+    \item es muss festgelegt werden welche View-Elemente ein Klick-Ereignis
+    auslösen und was mit diesem Ereignis geschehen soll
+    \item man kann dem Attribut \textit{onClick} eines Items einen Wert
+    zuweisen, z.B.
+    \textit{onClick} (\textit{android:onClick="onClick"}), wodurch die Methode
+    festgelegt wird, die bei einem Klick-Ereignis im Code aufgerufen werden soll 
+	\item die Methode \textit{onClick(View view)} muss in jedem Fall in der
+	Java-Klasse der Activity definiert werden
+	\item man kann diese Methode auch mittels Erweiterung der Klasse durch
+	\textit{implements View.onClickListener} implementieren
+	\item hier ist eine switch/case-Anweisung sinnvoll, die die Id der View
+	auswertet, erweitert\\
+	switch (view.getId()) \{ case R.id.mainActionBar\_imageButton1:
+	\ldots\}
+  \end{itemize}
+  \item Laden eines anderen Layouts (eine Activity) aus der aktuellen Activity
+  mittels Intents (Definition \textit{Intent} im nächsten Abschnitt)
+  \item Zustandsänderungen im System
+\end{itemize}
 
 \subsubsection{Intents}
+Intents werden benötigt um eine Activity aus der aktuellen Activity zu starten
+oder Informationen an eine andere Activity weiterzugeben.
+Vereinfacht ausgedrückt sind Intents Nachrichten bzw Absichtserklärungen, welche
+Aktion ausgeführt werden soll. Es gibt
+\begin{itemize}
+  \item Explizite Intents
+  \begin{itemize}
+    \item senden ihre Absicht an einen Empfänger
+    \item der Empfänger muss explizit angegeben werden
+    \item Empfänger können Komponenten einer Android-App, also Activities,
+    Services oder BroadcastReceiver sein
+    \item Empfänger wird über den voll qualifizierten Klassennamen angesprochen
+    \item Beispiel\\
+    		\includegraphics{grafiken/beispielExpliziteIntents.jpg}
+    		\begin{itemize}
+    		  \item mit dem Intent werden Informationen (.putExtra(…)) an die
+    		TestActivity übergeben (können verschiedenste Informationen sein)
+    		\item Information werden als Key-Value-Paar übergeben
+    		\item in der TestActivity ist es dann möglich, die übergebenen Informationen
+    		auszuwerten
+			\end{itemize}
+  \end{itemize}
+  \item Implizite Intents
+\begin{itemize}
+    \item senden ihre Nachricht/Absicht ab, aber der Empfänger steht noch nicht
+    fest (es ist nicht klar welche Komponente genau sich der Nachricht annimmt)
+    \item Beispiel bei Windows: nach einem Rechtsklick auf eine Datei, wählt
+    man Senden an und dann E-Mail-Empfänger, so startet automatisch das
+    Standard- E-Mail-Programm Ihres Systems
+    \item Intents erklären, was ihre Absicht ist, und das System entscheidet,
+    welche Komponente sich darum kümmert
+    \item Beispiel\\
+    		\includegraphics{grafiken/beispielImpliziteIntents.jpg}
+    		\begin{itemize}
+    		  \item impliziter Intent startet Browser und ruft die Web-Adresse
+    		  \textit{www.scyte.eu} auf
+    		\end{itemize}
+  \end{itemize}
+\end{itemize}
+Mit einem expliziten Intent lässt sich aus einer Activity eine neue
+Activity starten:\\
+\includegraphics{grafiken/beispielActivityIntents.jpg}
+
 %S. 102 Android 4 Apps mit SDK
 %S. 82  Android Apps mit Beispiel realer App
 %Implizite und Explizite Intents
