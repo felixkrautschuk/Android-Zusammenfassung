@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  7 AUG 2014 21:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.10)  19 AUG 2014 20:09
 entering extended mode
 **Android-Zusammenfassung.tex
 
@@ -613,25 +613,213 @@ Overfull \hbox (31.07158pt too wide) in paragraph at lines 393--394
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 418.
 [13 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/services
-.jpg>] [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 418.
+.jpg>]
+<grafiken/action_settings_mainActivity2.jpg, id=204, 407.27156pt x 78.2925pt>
+File: grafiken/action_settings_mainActivity2.jpg Graphic file (type jpg)
+
+<use grafiken/action_settings_mainActivity2.jpg>
+Package pdftex.def Info: grafiken/action_settings_mainActivity2.jpg used on inp
+ut line 414.
+(pdftex.def)             Requested size: 407.27055pt x 78.2923pt.
+
+<grafiken/action_settings_menu.jpg, id=205, 340.27126pt x 280.79906pt>
+File: grafiken/action_settings_menu.jpg Graphic file (type jpg)
+
+<use grafiken/action_settings_menu.jpg>
+Package pdftex.def Info: grafiken/action_settings_menu.jpg used on input line 4
+17.
+(pdftex.def)             Requested size: 340.27042pt x 280.79837pt.
+
+<grafiken/action_settings_menu_layout.jpg, id=206, 170.88844pt x 312.41719pt>
+File: grafiken/action_settings_menu_layout.jpg Graphic file (type jpg)
+
+<use grafiken/action_settings_menu_layout.jpg>
+Package pdftex.def Info: grafiken/action_settings_menu_layout.jpg used on input
+ line 418.
+(pdftex.def)             Requested size: 170.88802pt x 312.41641pt.
+
+<grafiken/action_settings_menu_layout_always.jpg, id=207, 164.86594pt x 313.17p
+t>
+File: grafiken/action_settings_menu_layout_always.jpg Graphic file (type jpg)
+ <use grafiken/action_settings_menu_layout_always.jpg>
+Package pdftex.def Info: grafiken/action_settings_menu_layout_always.jpg used o
+n input line 433.
+(pdftex.def)             Requested size: 164.86551pt x 313.16922pt.
+
+<grafiken/action_settings_menu_layout_icon.jpg, id=208, 171.64125pt x 311.66437
+pt>
+File: grafiken/action_settings_menu_layout_icon.jpg Graphic file (type jpg)
+ <use grafiken/action_settings_menu_layout_icon.jpg>
+Package pdftex.def Info: grafiken/action_settings_menu_layout_icon.jpg used on 
+input line 441.
+(pdftex.def)             Requested size: 171.64081pt x 311.6636pt.
+
+<grafiken/icons_ordner.jpg, id=209, 149.8097pt x 85.06781pt>
+File: grafiken/icons_ordner.jpg Graphic file (type jpg)
+
+<use grafiken/icons_ordner.jpg>
+Package pdftex.def Info: grafiken/icons_ordner.jpg used on input line 444.
+(pdftex.def)             Requested size: 149.80931pt x 85.0676pt.
+
+<grafiken/icons_xml.jpg, id=210, 350.81062pt x 220.57407pt>
+File: grafiken/icons_xml.jpg Graphic file (type jpg)
+
+<use grafiken/icons_xml.jpg>
+Package pdftex.def Info: grafiken/icons_xml.jpg used on input line 447.
+(pdftex.def)             Requested size: 350.80975pt x 220.57352pt.
+
+<grafiken/action_settings_mainActivity.jpg, id=211, 271.76532pt x 127.97812pt>
+File: grafiken/action_settings_mainActivity.jpg Graphic file (type jpg)
+
+<use grafiken/action_settings_mainActivity.jpg>
+Package pdftex.def Info: grafiken/action_settings_mainActivity.jpg used on inpu
+t line 450.
+(pdftex.def)             Requested size: 271.76465pt x 127.9778pt.
+
+Overfull \hbox (0.9326pt too wide) in paragraph at lines 409--455
+ []\OT1/cmr/bx/n/12 Optionsmenus[] []\OT1/cmr/m/n/12 Die Er-stel-lung eines Me
+nueintrages in der Ac-tion-Bar ist schnell erledigt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--455
+
+ []
+
+
+Overfull \hbox (58.5254pt too wide) in paragraph at lines 409--455
+[] [] 
+ []
+
+
+Overfull \hbox (11.39465pt too wide) in paragraph at lines 409--455
+\OT1/cmr/m/n/12 geschieht durch []Anderung der eben be-sproch-enen Zeile in: \O
+T1/cmr/m/it/12 an-droid:showAsAction="always"\OT1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--455
+
+ []
+
+
+Overfull \hbox (7.23471pt too wide) in paragraph at lines 409--455
+\OT1/cmr/m/n/12 Mit \OT1/cmr/m/it/12 an-droid:showAsAction="ifRoom" \OT1/cmr/m/
+n/12 wer-den die Menueintrage in der Ac-tion-Bar angezeigt,
+ []
+
+
+Overfull \hbox (22.6852pt too wide) in paragraph at lines 409--455
+\OT1/cmr/m/n/12 und die icons in der Menu-Ressourcendatei \OT1/cmr/m/it/12 mai
+n.xml \OT1/cmr/m/n/12 beim entsprechen-den Menuelement(item)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--455
+
+ []
+
+[14 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/action_s
+ettings_mainActivity2.jpg> <C:/Users/Felix/eclipse_workspace/Android-Zusammenfa
+ssung/grafiken/action_settings_menu.jpg> <C:/Users/Felix/eclipse_workspace/Andr
+oid-Zusammenfassung/grafiken/action_settings_menu_layout.jpg>] [15 <C:/Users/Fe
+lix/eclipse_workspace/Android-Zusammenfassung/grafiken/action_settings_menu_lay
+out_always.jpg>] [16 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/
+grafiken/action_settings_menu_layout_icon.jpg> <C:/Users/Felix/eclipse_workspac
+e/Android-Zusammenfassung/grafiken/icons_ordner.jpg>]
+<grafiken/kontextmenuesRegister.jpg, id=225, 531.48563pt x 195.73125pt>
+File: grafiken/kontextmenuesRegister.jpg Graphic file (type jpg)
+
+<use grafiken/kontextmenuesRegister.jpg>
+Package pdftex.def Info: grafiken/kontextmenuesRegister.jpg used on input line 
+465.
+(pdftex.def)             Requested size: 531.48433pt x 195.73076pt.
+
+<grafiken/kontextmenuesOnCreate.jpg, id=226, 524.71031pt x 83.5622pt>
+File: grafiken/kontextmenuesOnCreate.jpg Graphic file (type jpg)
+
+<use grafiken/kontextmenuesOnCreate.jpg>
+Package pdftex.def Info: grafiken/kontextmenuesOnCreate.jpg used on input line 
+470.
+(pdftex.def)             Requested size: 524.70901pt x 83.56198pt.
+
+<grafiken/kontextmenuesOnContextItemSelected.JPG, id=227, 525.46312pt x 181.427
+81pt>
+File: grafiken/kontextmenuesOnContextItemSelected.JPG Graphic file (type jpg)
+ <use grafiken/kontextmenuesOnContextItemSelected.JPG>
+Package pdftex.def Info: grafiken/kontextmenuesOnContextItemSelected.JPG used o
+n input line 475.
+(pdftex.def)             Requested size: 525.46184pt x 181.42737pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--476
+
+ []
+
+
+Overfull \hbox (76.24022pt too wide) in paragraph at lines 457--476
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--476
+
+ []
+
+
+Overfull \hbox (69.4649pt too wide) in paragraph at lines 457--476
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--476
+
+ []
+
+
+Overfull \hbox (70.21773pt too wide) in paragraph at lines 457--476
+[] 
+ []
+
+[17 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/icons_xm
+l.jpg> <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/actio
+n_settings_mainActivity.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
+ [18 <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/grafiken/kontext
+menuesRegister.jpg> <C:/Users/Felix/eclipse_workspace/Android-Zusammenfassung/g
+rafiken/kontextmenuesOnCreate.jpg> <C:/Users/Felix/eclipse_workspace/Android-Zu
+sammenfassung/grafiken/kontextmenuesOnContextItemSelected.JPG>] [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
 
 (C:\Users\Felix\eclipse_workspace\Android-Zusammenfassung\Android-Zusammenfassu
 ng.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 418.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 418.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
 Package rerunfilecheck Info: File `Android-Zusammenfassung.out' has not changed
 .
 (rerunfilecheck)             Checksum: 3EDF9BE6BAA65149F91F63F9B4557504;1784.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 418.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
  ) 
 Here is how much of TeX's memory you used:
- 6642 strings out of 493921
- 97993 string characters out of 3144876
+ 6706 strings out of 493921
+ 100220 string characters out of 3144876
  181016 words of memory out of 3000000
- 9799 multiletter control sequences out of 15000+200000
+ 9844 multiletter control sequences out of 15000+200000
  10749 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,4n,28p,267b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -642,9 +830,9 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Android-Zusammenfassung.pdf (16 pages, 620291 bytes).
+Output written on Android-Zusammenfassung.pdf (21 pages, 886833 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -395,11 +395,85 @@ Hintergrund. Sie sind gerade für länger andauernde Tätigkeiten gedacht. Es gibt
 
 
 \subsubsection{Menüs}
-%Kontextmenüs, Optionsmenüs
-%http://developer.android.com/guide/topics/ui/menus.html
-%http://developer.android.com/guide/topics/resources/menu-resource.html
-%S.85 Android Apps mit Beispiel realer App
 %drawables, icons für actionbars
+
+Es gibt nun zwei Arten von Menüs, das Optionsmenü und das Kontextmenü. Das
+Optionsmenü ist mit einer klassischen Menüleiste anderer Anwendungen vergleichbar und
+sollte nur Funktionen enthalten, die für die aktuelle Activity sinnvoll sind.
+Zusätzlich ist eine Hilfe- und Informationsseite der Anwendung sinnvoll. Das
+Kontextmenü ist in klassischen Anwendungen meist durch einen Rechtsklick auf
+ein Objekt aufrufbar. Dieser Rechtsklick wird in Android durch das lange
+Antippen eines Objekts auf der Oberfläche ersetzt.
+
+\paragraph{Optionsmenüs}
+Die Erstellung eines Menüeintrages in der ActionBar ist schnell erledigt.
+Standardmäßig wird vom Projektassistenten nämlich schon ein Menüeintrag in der
+Mainactivity erstellt. 
+\\Um das Optionsmenü für eine Activity zu spezifizieren, muss die Funktion
+\textit{onCreateOptionsMenu(Menu menu)} überschrieben werden.\\
+\\\includegraphics{grafiken/action_settings_mainActivity2.jpg}
+\\Neue Menüeinträge müssen in der Datei \textit{main.xml}
+definiert werden.\\
+\\\includegraphics{grafiken/action_settings_menu.jpg}
+\includegraphics{grafiken/action_settings_menu_layout.jpg}
+\\Die Menüdefinition erfolgt durch \textit{\textless menu /\textgreater} Tags,
+welche die Menüeinträge als \textit{\textless item /\textgreater} enthalten. Die
+Items können selbst natürlich widerum Menüs enthalten, wodurch Untermenüs
+entstehen.
+\\Wie auf obigem Bild zu sehen
+ist, wird das Menü aufgeklappt und damit der Menüeintrag \textit{Settings}
+angezeigt sobald die Menütaste des Gerätes betätigt wird. Im XML-Quellcode der
+Menü-Datei wird dies durch die Zeile \textit{android:showAsAction="never"}
+festgelegt. Das Attribut \textit{android:showAsAction=" "} legt fest, wann und
+wie der jeweilige Menüeintrag in der ActionBar angezeigt wird.
+Man kann solche Menüeinträge auch für immer in der ActionBar anzeigen lassen,
+ohne dass die Menütaste des Gerätes betätigt werden muss. Dies geschieht durch
+Änderung der eben besprochenen Zeile in:
+\textit{android:showAsAction="always"}.\\
+\\\includegraphics{grafiken/action_settings_menu_layout_always.jpg}\\
+\\Mit \textit{android:showAsAction="ifRoom"} werden die Menüeinträge in der
+ActionBar angezeigt, sofern genügend Platz vorhanden ist. Ist dort nicht
+genügend Platz vorhanden, wird der Eintrag in der Liste des Optionsmenüs
+angezeigt.\\
+Menüeinträge können auch \textbf{Icons} zugewiesen werden, die anstatt des
+festgelegten Textes angezeigt werden, z.B. durch die Zeile
+\textit{android:icon="@android:drawable/ic\_delete"}.
+\\\includegraphics{grafiken/action_settings_menu_layout_icon.jpg}
+\\Man kann auch eigene Icons erstellen und diese ins Programm einbinden. Hierzu
+müssen diese in den folgenden Ordner eingefügt werden:
+\\\includegraphics{grafiken/icons_ordner.jpg}\\
+und die icons in der Menü-Ressourcendatei \textit{main.xml} beim entsprechenden
+Menüelement(item) eingebunden werden.
+\\\includegraphics{grafiken/icons_xml}. 
+\\Um auf \textbf{Klickereignisse} reagieren zu können, muss die Funktion
+\textit{onOptionsItemSelected(MenuItem item)} überschrieben werden.\\
+\\\includegraphics{grafiken/action_settings_mainActivity.jpg}
+\\Das vom Nutzer betätigte Menüelement kann mittels Aufruf der Funktion
+\textit{getItemId} identifiziert werden. Sie gibt die eindeutige ID des
+Menüelements zurück, welche durch das \textit{android:id} Attribut in der
+Menü-Ressourcendatei \textit{main.xml} definiert wurde.
+
+\paragraph{Kontextmenüs}
+Sie werden im Gegensatz zu Optionsmenüs nicht durch Betätigen der Menütaste des
+Gerätes (oder wie bei Windows durch die rechte Maustaste) ausgelöst, sondern
+durch langes Antippen (Tippen und Halten) eines Elementes. Besonders beliebt
+sind die Kontextmenüs im Zusammenhang mit ListView-Elementen. Aber natürlich
+können auch das lange Antippen beliebiger View Elemente, z.B. Buttons, ein
+Kontextmenü auslösen. 
+Hierfür muss das jeweilige Viewelement an die Methode
+\textit{registerForContextMenu} übergeben werden.\\
+\\\includegraphics{grafiken/kontextmenuesRegister.jpg}\\
+\ldots\\
+\\Als nächstes muss die Methode \textit{onCreateContextMenu()} übrschrieben
+werden. Hier muss das Menü angegeben werden, welches beim langen Antippen des
+View-Elementes angezeigt werden soll.\\
+\\\includegraphics{grafiken/kontextmenuesOnCreate.jpg}
+\\Um auf \textbf{Klickereignisse} reagieren zu können muss die Methode
+\textit{onContextItemSelected} überschrieben werden. Hier gibt man für jedes
+Menü-Item des angezeigten Kontextmenüs an, was jeweils ausgeführt werden soll
+(wie schon bei Optionsmenüs).\\
+\\\includegraphics{grafiken/kontextmenuesOnContextItemSelected.JPG}
+
 
 \section{Allgemeiner Ablauf bei einer einfachen Beispiel-App}
 \subsection{Anlegen eines Projektes und Erstellung einer MainActivity}
