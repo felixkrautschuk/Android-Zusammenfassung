@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.felix.android_app.MensaActivity" >
+
+    <item android:id="@+id/action_heute"
+        android:title="Heute"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_woche"
+        android:title="Woche"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

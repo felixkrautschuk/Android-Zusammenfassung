@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android-App</string>
+    <string name="title_activity_stundenplan">StundenplanActivity</string>
+    <string name="title_activity_noten">NotenActivity</string>
+    <string name="title_activity_mensa">MensaActivity</string>
+
+</resources>

@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:id="@+id/main_bottomTablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:drawable/dark_header"
+        android:stretchColumns="0,1,2" >
+        <TableRow
+            android:id="@+id/tableRowImageButtons"
+            >
+            <ImageButton
+                android:id="@+id/mainBottomActionBar_imageButton_stundenplan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_timetable" />
+            <ImageButton
+                android:id="@+id/mainBottomActionBar_imageButton_noten"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="center"
+                android:onClick="onClick"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_note" />
+            <ImageButton
+                android:id="@+id/mainBottomActionBar_imageButton_mensa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="center"
+                android:onClick="onClick"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_mensa" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowTextViews"
+            >
+        <TextView
+            android:id="@+id/mainBottomActionBar_textView_text_stundenplan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Stunden"
+            android:textColor="@android:color/primary_text_dark" />
+        <TextView
+            android:id="@+id/mainBottomActionBar_textView_noten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Noten"
+            android:textColor="@android:color/primary_text_dark" />
+        <TextView
+            android:id="@+id/mainBottomActionBar_textView_mensa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Mensa"
+            android:textColor="@android:color/primary_text_dark" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HTWDD"
+        android:id="@+id/textViewMain"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textViewMain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/htw"
+        />
+
+</RelativeLayout>
